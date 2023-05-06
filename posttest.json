@@ -1,0 +1,45 @@
+{
+    "version": 2.0,
+    "questions": [
+      {
+        "question": "1.Which of the following is NOT a rule for method overriding?",
+        "answers": {
+          "a": "a.Method must have the same name as in the parent class.",
+          "b": "b.Method must have the same parameter as in the parent class.",
+          "c": "c.There must be an IS-A relationship (inheritance).",
+          "d": "d.A subclass in a different package can override any superclass method that is not declared private or final.",
+          "e": "e.An overriding method can throw any unchecked exceptions, regardless of whether the overridden method throws an exception or not."          
+        },
+        "explanations": {
+        },
+        "correctAnswer": "d",
+        "difficulty": "beginner"
+      },
+      {
+        "question": "2.Suppose you are developing a program for a library that has different types of books, including fiction, non-fiction, and reference books. Each book has a title, an author, and a publication date. Which of the following statements about using polymorphism to implement a method that displays the details of a book is true?",
+        "answers": {
+          "a": "a.A separate method should be created for each type of book, with the appropriate details displayed in each method.",
+          "b": "b.A single method should be created that takes a book object as a parameter, and the appropriate details are displayed based on the type of book.",
+          "c": "c.A single method should be created that displays the common details of all books and then calls a separate method for each type of book to display the specific details.",
+          "d": "d.Polymorphism is not applicable to this scenario."
+        },
+        "explanations": {
+        },
+        "correctAnswer": "b",
+        "difficulty": "beginner"
+      },
+      {
+        "question": "3.In a car rental system, there are different types of vehicles such as Sedan, SUV, and Hatchback. Each vehicle type has different features and specifications. To implement this in Java, which of the following statements about subtype polymorphism is correct?",
+        "answers": {
+          "a": "a.Subtype polymorphism is not needed since each vehicle type has different features and specifications.",
+          "b": "b.Sedan, SUV, and Hatchback should be implemented as separate classes without any common superclass.",
+          "c": "c.Sedan, SUV, and Hatchback should be implemented as subclasses of a common Vehicle class, with each subclass inheriting the common properties of a Vehicle and overriding specific properties as needed.",
+          "d": "d.Sedan, SUV, and Hatchback should be implemented as interfaces and each type of vehicle should implement these interfaces to provide the required features and specifications."
+        },
+        "explanations": {
+        },
+        "correctAnswer": "c",
+        "difficulty": "beginner"
+      }
+    ]
+  }
