@@ -38,17 +38,29 @@ Experiment 4 recap: The class Customer was implemented in Java following the con
 
 Experiment 5 recap: The aggregation and composition relationship of the class **Customer** and class Vehicle with class **Reservation** was implemented in java.
 
-Now, the generalization of the classes Customer and Exec as the class Person was implemented in Java.
+Experiment 6 recap: The generalization of the class Customer and class Exec as the class Person was implemented in Java.
 
-Step 1: To begin, identify an example for IS-A / AS-A relationship between the available classes.
+Now, the steps to implement the polymorphic behaviour of the Person object as Customer and Exec objects before and after conversion of the class Person as abstract:
 
-Step 2: Identify the common variables that can be moved from classes Customer and Exec into class Person.
+Step 1: Implement the widening and narrowing of the Person, Customer and Exec object.
 
-Step 3: Write Java Code for the newly created class **Person**.
+Step 2: Convert class Person as abstract and implement the widening and narrowing of the Person, Customer and Exec object.
 
-Step 4: Modify **Customer** and **Exec** to reflect the newly created class **Person**
+Step 3: Complete the methods in the sequence diagram order of invocation as follows:
+
+    i. Exec class – requestVehicle
+
+    ii. Reservation class – locateReservation,
+
+    iii. Exec class – signContract
+
+    iv. Reservation class – releaseContract
+
+    v. Vehicle class – updateKeystatus
 
 Step 4: Use the provided TestDriver class to check the status of working.
 
+Output: Execution of the TestDriver code is shown in the console view.
 
 > **Note:** Work on the experiments sequentially.
+
