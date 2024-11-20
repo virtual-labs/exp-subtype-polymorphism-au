@@ -4,10 +4,10 @@
       {
         "question": "1.Which of the following is NOT a type of Polymorphism?",
         "answers": {
-          "a": "a.Coercion",
-          "b": "b.Overloading",
-          "c": "c.Polymorphism does not have any types",
-          "d": "d.Subtype"
+          "a": "Coercion",
+          "b": "Overloading",
+          "c": "Polymorphism does not have any types",
+          "d": "Subtype"
         },
         "explanations": {
         },
@@ -17,10 +17,10 @@
       {
         "question": "2.Which type of Polymorphism is used for Generics in Java?",
         "answers": {
-          "a": "a.Coercion",
-          "b": "b.Overloading",
-          "c": "c.Parametric",
-          "d": "d.Subtype"
+          "a": "Coercion",
+          "b": "Overloading",
+          "c": "Parametric",
+          "d": "Subtype"
         },
         "explanations": {
         },
@@ -30,10 +30,10 @@
       {
         "question": "3.What is the term used for converting a subtype to one of its supertypes?",
         "answers": {
-          "a": "a.Casting",
-          "b": "b.Widening",
-          "c": "c.Upcasting",
-          "d": "d.Downcasting"
+          "a": "Casting",
+          "b": "Widening",
+          "c": "Upcasting",
+          "d": "Downcasting"
         },
         "explanations": {
         },
