@@ -356,7 +356,7 @@
                 
                 
                   <div class="question beginner">
-                    1.Which of the following is NOT a type of Polymorphism?
+                    1. Which of the following is NOT a type of Polymorphism?
                   </div>
                   
                   <div class="answers">
@@ -395,7 +395,7 @@
                 </div>
                 
                   <div class="question beginner">
-                    2.Which type of Polymorphism is used for Generics in Java?
+                    2. Which type of Polymorphism is used for Generics in Java?
                   </div>
                   
                   <div class="answers">
@@ -434,7 +434,7 @@
                 </div>
                 
                   <div class="question beginner">
-                    3.What is the term used for converting a subtype to one of its supertypes?
+                    3. What is the term used for converting a subtype to one of its supertypes?
                   </div>
                   
                   <div class="answers">
@@ -471,13 +471,92 @@
                     </div>
                     <p class="panel">Explanation</p>
                 </div>
+
+                <div class="question beginner">
+                    4. You are building an application that needs to create different types of Document objects (e.g., PDFDocument, WordDocument, ExcelDocument) based on user input, without exposing the client code to the specific instantiation logic of each document type. Which creational design pattern would be most suitable for this scenario?
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer3a">
+                      <label>
+                        <input type="radio" name="question3" value="a">
+                        a: Prototype
+                      </label>
+                      <a href="#" id="explanation3a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer3b">
+                      <label>
+                        <input type="radio" name="question3" value="b">
+                        b: Factory Method 
+                      </label>
+                      <a href="#" id="explanation3b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer3c">
+                      <label>
+                        <input type="radio" name="question3" value="c">
+                        c: Builder
+                      </label>
+                      <a href="#" id="explanation3c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer3d">
+                      <label>
+                        <input type="radio" name="question3" value="d">
+                        d: Abstract Factory
+                      </label>
+                      <a href="#" id="explanation3d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+
+                 <div class="question beginner">
+                    5. You are developing a system that needs to create families of related objects (e.g., WindowsButton and WindowsCheckbox, or MacButton and MacCheckbox) without specifying their concrete classes. The specific family of objects to be created depends on the operating system. Which creational design pattern is best suited for this situation?
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer4a">
+                      <label>
+                        <input type="radio" name="question4" value="a">
+                        a: Factory Method
+                      </label>
+                      <a href="#" id="explanation4a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer4b">
+                      <label>
+                        <input type="radio" name="question4" value="b">
+                        b: Prototype
+                      </label>
+                      <a href="#" id="explanation4b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer4c">
+                      <label>
+                        <input type="radio" name="question4" value="c">
+                        c: Abstract Factory
+                      </label>
+                      <a href="#" id="explanation4c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer4d">
+                      <label>
+                        <input type="radio" name="question4" value="d">
+                        d: Builder
+                      </label>
+                      <a href="#" id="explanation4d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+
                </div>
                 <button id="submit" class="btn btn-primary">Submit Quiz</button>
                 <div id="results"></div>
           </div>
             
             <script>
-              const myQuestions = [{"question":"1.Which of the following is NOT a type of Polymorphism?","answers":{"a":"Coercion","b":"Overloading","c":"Polymorphism does not have any types","d":"Subtype"},"explanations":{},"correctAnswer":"c","difficulty":"beginner"},{"question":"2.Which type of Polymorphism is used for Generics in Java?","answers":{"a":"Coercion","b":"Overloading","c":"Parametric","d":"Subtype"},"explanations":{},"correctAnswer":"c","difficulty":"beginner"},{"question":"3.What is the term used for converting a subtype to one of its supertypes?","answers":{"a":"Casting","b":"Widening","c":"Upcasting","d":"Downcasting"},"explanations":{},"correctAnswer":"c","difficulty":"beginner"}];
+              const myQuestions = [{"question":"1.Which of the following is NOT a type of Polymorphism?","answers":{"a":"Coercion","b":"Overloading","c":"Polymorphism does not have any types","d":"Subtype"},"explanations":{},"correctAnswer":"c","difficulty":"beginner"},{"question":"2.Which type of Polymorphism is used for Generics in Java?","answers":{"a":"Coercion","b":"Overloading","c":"Parametric","d":"Subtype"},"explanations":{},"correctAnswer":"c","difficulty":"beginner"},{"question":"3.What is the term used for converting a subtype to one of its supertypes?","answers":{"a":"Casting","b":"Widening","c":"Upcasting","d":"Downcasting"},"explanations":{},"correctAnswer":"c","difficulty":"beginner"},{"question":"4.You are building an application that needs to create different types of Document objects (e.g., PDFDocument, WordDocument, ExcelDocument) based on user input, without exposing the client code to the specific instantiation logic of each document type. Which creational design pattern would be most suitable for this scenario?","answers":{"a":"Prototype","b":"Factory Method ","c":"Builder","d":"Abstract Factory"},"explanations":{},"correctAnswer":"b","difficulty":"beginner"},{"question":"5.You are developing a system that needs to create families of related objects (e.g., WindowsButton and WindowsCheckbox, or MacButton and MacCheckbox) without specifying their concrete classes. The specific family of objects to be created depends on the operating system. Which creational design pattern is best suited for this situation?","answers":{"a":"Factory Method","b":"Prototype","c":"Abstract Factory","d":"Builder"},"explanations":{},"correctAnswer":"c","difficulty":"beginner"}];
             </script>
               <script src="./assets/js/assessment_v2.js"></script>  
           <div class="bug-report-mobile">

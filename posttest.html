@@ -356,7 +356,7 @@
                 
                 
                   <div class="question beginner">
-                    1.Which of the following is NOT a rule for method overriding?
+                    1. Which of the following is NOT a rule for method overriding?
                   </div>
                   
                   <div class="answers">
@@ -403,7 +403,7 @@
                 </div>
                 
                   <div class="question beginner">
-                    2.Suppose you are developing a program for a library that has different types of books, including fiction, non-fiction, and reference books. Each book has a title, an author, and a publication date. Which of the following statements about using polymorphism to implement a method that displays the details of a book is true?
+                    2. Suppose you are developing a program for a library that has different types of books, including fiction, non-fiction, and reference books. Each book has a title, an author, and a publication date. Which of the following statements about using polymorphism to implement a method that displays the details of a book is true?
                   </div>
                   
                   <div class="answers">
@@ -442,7 +442,7 @@
                 </div>
                 
                   <div class="question beginner">
-                    3.In a car rental system, there are different types of vehicles such as Sedan, SUV, and Hatchback. Each vehicle type has different features and specifications. To implement this in Java, which of the following statements about subtype polymorphism is correct?
+                    3. In a car rental system, there are different types of vehicles such as Sedan, SUV, and Hatchback. Each vehicle type has different features and specifications. To implement this in Java, which of the following statements about subtype polymorphism is correct?
                   </div>
                   
                   <div class="answers">
@@ -479,13 +479,93 @@
                     </div>
                     <p class="panel">Explanation</p>
                 </div>
+
+                <div class="question beginner">
+                    4. You are designing a system that requires creating complex Product objects with many optional attributes. The construction process involves multiple steps, and you want to ensure that the object is built incrementally and immutably. Which creational design pattern would you employ to handle this complex object creation?
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer3a">
+                      <label>
+                        <input type="radio" name="question3" value="a">
+                        a: Singleton
+                      </label>
+                      <a href="#" id="explanation3a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer3b">
+                      <label>
+                        <input type="radio" name="question3" value="b">
+                        b: Factory Method
+                      </label>
+                      <a href="#" id="explanation3b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer3c">
+                      <label>
+                        <input type="radio" name="question3" value="c">
+                        c: Builder
+                      </label>
+                      <a href="#" id="explanation3c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer3d">
+                      <label>
+                        <input type="radio" name="question3" value="d">
+                        d: Abstract Factory
+                      </label>
+                      <a href="#" id="explanation3d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+
+                 <div class="question beginner">
+                    5. You are developing a logging system where you need to ensure that only one instance of the Logger class exists throughout the application to manage log files and prevent concurrent access issues. Which creational design pattern would you use to achieve this?
+
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer4a">
+                      <label>
+                        <input type="radio" name="question4" value="a">
+                        a: Factory Method
+                      </label>
+                      <a href="#" id="explanation4a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer4b">
+                      <label>
+                        <input type="radio" name="question4" value="b">
+                        b: Abstract Factory
+                      </label>
+                      <a href="#" id="explanation4b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer4c">
+                      <label>
+                        <input type="radio" name="question4" value="c">
+                        c: Singleton
+                      </label>
+                      <a href="#" id="explanation4c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer4d">
+                      <label>
+                        <input type="radio" name="question4" value="d">
+                        d: Builder
+                      </label>
+                      <a href="#" id="explanation4d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+
                </div>
                 <button id="submit" class="btn btn-primary">Submit Quiz</button>
                 <div id="results"></div>
           </div>
             
             <script>
-              const myQuestions = [{"question":"1.Which of the following is NOT a rule for method overriding?","answers":{"a":"Method must have the same name as in the parent class.","b":"Method must have the same parameter as in the parent class.","c":"There must be an IS-A relationship (inheritance).","d":"A subclass in a different package can override any superclass method that is not declared private or final.","e":"An overriding method can throw any unchecked exceptions, regardless of whether the overridden method throws an exception or not."},"explanations":{},"correctAnswer":"d","difficulty":"beginner"},{"question":"2.Suppose you are developing a program for a library that has different types of books, including fiction, non-fiction, and reference books. Each book has a title, an author, and a publication date. Which of the following statements about using polymorphism to implement a method that displays the details of a book is true?","answers":{"a":"A separate method should be created for each type of book, with the appropriate details displayed in each method.","b":"A single method should be created that takes a book object as a parameter, and the appropriate details are displayed based on the type of book.","c":"A single method should be created that displays the common details of all books and then calls a separate method for each type of book to display the specific details.","d":"Polymorphism is not applicable to this scenario."},"explanations":{},"correctAnswer":"b","difficulty":"beginner"},{"question":"3.In a car rental system, there are different types of vehicles such as Sedan, SUV, and Hatchback. Each vehicle type has different features and specifications. To implement this in Java, which of the following statements about subtype polymorphism is correct?","answers":{"a":"Subtype polymorphism is not needed since each vehicle type has different features and specifications.","b":"Sedan, SUV, and Hatchback should be implemented as separate classes without any common superclass.","c":"Sedan, SUV, and Hatchback should be implemented as subclasses of a common Vehicle class, with each subclass inheriting the common properties of a Vehicle and overriding specific properties as needed.","d":"Sedan, SUV, and Hatchback should be implemented as interfaces and each type of vehicle should implement these interfaces to provide the required features and specifications."},"explanations":{},"correctAnswer":"c","difficulty":"beginner"}];
+              const myQuestions = [{"question":"1.Which of the following is NOT a rule for method overriding?","answers":{"a":"Method must have the same name as in the parent class.","b":"Method must have the same parameter as in the parent class.","c":"There must be an IS-A relationship (inheritance).","d":"A subclass in a different package can override any superclass method that is not declared private or final.","e":"An overriding method can throw any unchecked exceptions, regardless of whether the overridden method throws an exception or not."},"explanations":{},"correctAnswer":"d","difficulty":"beginner"},{"question":"2.Suppose you are developing a program for a library that has different types of books, including fiction, non-fiction, and reference books. Each book has a title, an author, and a publication date. Which of the following statements about using polymorphism to implement a method that displays the details of a book is true?","answers":{"a":"A separate method should be created for each type of book, with the appropriate details displayed in each method.","b":"A single method should be created that takes a book object as a parameter, and the appropriate details are displayed based on the type of book.","c":"A single method should be created that displays the common details of all books and then calls a separate method for each type of book to display the specific details.","d":"Polymorphism is not applicable to this scenario."},"explanations":{},"correctAnswer":"b","difficulty":"beginner"},{"question":"3.In a car rental system, there are different types of vehicles such as Sedan, SUV, and Hatchback. Each vehicle type has different features and specifications. To implement this in Java, which of the following statements about subtype polymorphism is correct?","answers":{"a":"Subtype polymorphism is not needed since each vehicle type has different features and specifications.","b":"Sedan, SUV, and Hatchback should be implemented as separate classes without any common superclass.","c":"Sedan, SUV, and Hatchback should be implemented as subclasses of a common Vehicle class, with each subclass inheriting the common properties of a Vehicle and overriding specific properties as needed.","d":"Sedan, SUV, and Hatchback should be implemented as interfaces and each type of vehicle should implement these interfaces to provide the required features and specifications."},"explanations":{},"correctAnswer":"c","difficulty":"beginner"},{"question":"4.You are designing a system that requires creating complex Product objects with many optional attributes. The construction process involves multiple steps, and you want to ensure that the object is built incrementally and immutably. Which creational design pattern would you employ to handle this complex object creation?","answers":{"a":"Singleton","b":"Factory Method","c":"Builder","d":"Abstract Factory"},"explanations":{},"correctAnswer":"c","difficulty":"beginner"},{"question": "5. You are developing a logging system where you need to ensure that only one instance of the Logger class exists throughout the application to manage log files and prevent concurrent access issues. Which creational design pattern would you use to achieve this?","answers": {"a": "Factory Method","b": "Abstract Factory","c": "Singleton","d": "Builder"},"explanations": {},"correctAnswer": "c","difficulty": "beginner"}];
             </script>
               <script src="./assets/js/assessment_v2.js"></script>  
           <div class="bug-report-mobile">
