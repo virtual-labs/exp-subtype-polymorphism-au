@@ -1,39 +1,70 @@
 {
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+    "version": 2.0,
+    "questions": [
+      {
+        "question": "1. Which of the following is NOT a type of Polymorphism?",
+        "answers": {
+          "a": "Coercion",
+          "b": "Overloading",
+          "c": "Polymorphism does not have any types",
+          "d": "Subtype"
+        },
+        "explanations": {
+        },
+        "correctAnswer": "c",
+        "difficulty": "beginner"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      {
+        "question": "2. Which type of Polymorphism is used for Generics in Java?",
+        "answers": {
+          "a": "Coercion",
+          "b": "Overloading",
+          "c": "Parametric",
+          "d": "Subtype"
+        },
+        "explanations": {
+        },
+        "correctAnswer": "c",
+        "difficulty": "beginner"
       },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+      {
+        "question": "3. What is the term used for converting a subtype to one of its supertypes?",
+        "answers": {
+          "a": "Casting",
+          "b": "Widening",
+          "c": "Upcasting",
+          "d": "Downcasting"
+        },
+        "explanations": {
+        },
+        "correctAnswer": "c",
+        "difficulty": "beginner"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      {
+        "question": "4. You are building an application that needs to create different types of Document objects (e.g., PDFDocument, WordDocument, ExcelDocument) based on user input, without exposing the client code to the specific instantiation logic of each document type. Which creational design pattern would be most suitable for this scenario?",
+        "answers": {
+          "a": "Prototype",
+          "b": "Factory Method",
+          "c": "Builder",
+          "d": "Abstract Factory"
+        },
+        "explanations": {
+        },
+        "correctAnswer": "b",
+        "difficulty": "beginner"
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+      {
+        "question": "5. You are developing a system that needs to create families of related objects (e.g., WindowsButton and WindowsCheckbox, or MacButton and MacCheckbox) without specifying their concrete classes. The specific family of objects to be created depends on the operating system. Which creational design pattern is best suited for this situation?",
+        "answers": {
+          "a": "Factory Method",
+          "b": "Prototype",
+          "c": "Abstract Factory",
+          "d": "Builder"
+        },
+        "explanations": {
+        },
+        "correctAnswer": "c",
+        "difficulty": "beginner"
+      }
+    ]
+  }
