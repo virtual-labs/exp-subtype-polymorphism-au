@@ -1,4 +1,6 @@
-### Procedure
+# Procedure Used to Explain the Concept
+
+# Learning Simulation Walkthrough
 
 ## Stage 1: Instructions  
 At the beginning, you will see an **Instructions page**. This page contains a short, ordered list that explains the task, along with a **Next** button.  
@@ -62,15 +64,6 @@ Finally, you will see a **congratulations message**. This marks the end of the s
 - **Downcasting:** You convert a superclass reference back to a subclass type when needed.  
 - **Static Binding:** You observe how reference type determines accessible methods at compile time.  
 - **Abstract Classes:** You learn why abstract classes serve as conceptual parents but cannot be instantiated directly.  
-
----
-
-# Tips if You Get Stuck  
-- Read the code comments carefully.  
-- Use the help button for guidance.  
-- Check the class diagram before making guesses.  
-- Review the theory on upcasting, downcasting, and abstract classes.  
-- Correct one step at a time instead of changing many things at once.  
 
 ---
 
