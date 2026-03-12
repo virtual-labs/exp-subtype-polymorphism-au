@@ -1,66 +1,93 @@
 ### Procedure
 
-Consider a use case of the car rental application as follows:
+## Stage 1: Instructions  
+At the beginning, you will see an **Instructions page**. This page contains a short, ordered list that explains the task, along with a **Next** button.  
+Take a moment to read the instructions carefully. The experiment is designed to help you learn about upcasting, downcasting, and static binding by modifying the `TestDriver` class. Once you understand the purpose, click **Next** to continue.  
 
--  **Use Case Name:** Release a Vehicle (to a customer)
+---
 
-- **Description:** A customer arrives to acquire the vehicle and depart for desired destination. The vehicle reservation contract is signed and the vehicle is released to the customer.
+## Stage 2: Class Diagram  
+Next, you will see a **class diagram** that shows the main classes used in the experiment. You can move between the diagram and the class tabs.  
+Study the relationships between the classes. Pay special attention to the superclass–subclass structure involving `Person`, `Customer`, and `Exec`. This diagram will help you understand inheritance before you begin editing code.  
 
-- **Actors:** Front-Desk Office Executive, Customer
+---
 
-  Basic Flow ("Sunny Day Scenario"):
+## Stages 3 to 7: Person, Customer, Exec, Reservation, and Vehicle Classes  
+In these stages, you will see **read‑only views of the classes**. Each tab shows predefined code and structure.  
+Review the classes carefully. Identify which ones are superclasses and which ones are subclasses. Notice the constructors, getters, setters, and relationships, as these will be important later.  
 
-    1. A customer comes to the office to acquire a vehicle.
+---
 
-    2. The Office Executive locates the vehicle reservation contract by means of the reservation number and/or customer name. [Exception: Required vehicle type is not available due to late arrivals.]
+## Stage 8: Test Driver Class  
+Here begins the main activity on subtype polymorphism. You will see a **code editor** with missing parts to fill in, a checklist of tasks, and help buttons.  
+Follow the comments in the code step by step. You will create arrays, store objects using upcasting, observe static binding, and use downcasting when necessary. Each correct step will be marked on the checklist, and you will receive feedback if something is incorrect.  
 
-    3. The customer signs the contract and the Office Executive gives the keys to the vehicle.
+---
 
-    4. The Office Executive then marks the contract active by entering the vehicle release date (today's date) onto the vehicle reservation contract. The use case terminates at this point.
+## Stage 9: Abstraction  
+At this stage, you will modify the `Person` class to make it **abstract**. After doing so, you will see what happens when the program tries to create a `Person` object directly. This will demonstrate why abstract classes cannot be instantiated.  
 
--  **Exceptions ("Rainy Day Scenario"):**
+---
 
-    1. Required vehicle type is not available due to late arrivals:
+## Stage 10 to 14: Adding Methods  
+In the following stages, you will add methods to different classes:  
+- **Stage 10:** Write the `requestVehicle` method in the `Exec` class.  
+- **Stage 11:** Complete the reservation lookup method in the `Reservation` class.  
+- **Stage 12:** Implement the contract signing logic.  
+- **Stage 13:** Write code to release a reservation contract.  
+- **Stage 14:** Update the key status in the `Vehicle` class.  
 
-    2. Raised when the reserved vehicle is not available due to late returns. The customer is informed of the situation and told about the other vehicle types that are available. The customer is offered an incentive to accept another vehicle type. If the customer is not satisfied, the reservation is cancelled without penalty charges. The customer either accepts another vehicle type or cancels the reservation.
+Each step provides immediate feedback, helping you understand how objects interact and how state changes are handled.  
 
-- **Postconditions:** The customer departs with the vehicle and the reservation contract is marked active, or the reservation is cancelled.
+---
 
--  **Stakeholder:** Reservation department
+## Stage 15: Rental System Class  
+Here, you will bring everything together. You will construct the `RentalSystem` class by creating arrays for customers, executives, vehicles, and reservations. You will also write methods like `assignExec()` and `visitOffice(...)`. This stage shows how all the classes interact to form a complete system.  
 
-Experiment 1 recap: Use case was completed. Noun phrases and conceptual classes were identified, and the domain object model was constructed.
+---
 
-Experiment 2 recap: The verb phrases were identified and the method invocation between the objects were ordered to construct the time sequence model.
+## Stage 16: Understanding the Output  
+You will now see the final `TestDriver.java` code alongside a console output. Compare the code with the output to observe how the objects interact in sequence. This stage is explanatory, showing the successful behavior of the program.  
 
-Experiment 3 recap: The datatype of attributes and the signature of the methods were identified for every class. The relationship between classes was defined to construct the class diagram.
+---
 
-Experiment 4 recap: The class Customer was implemented in Java following the constraints given on the attributes and its accessor and mutator functions.
+## Stage 17: Completion  
+Finally, you will see a **congratulations message**. This marks the end of the simulation. You can review what you learned or revisit earlier stages if you wish.  
 
-Experiment 5 recap: The aggregation and composition relationship of the class **Customer** and class Vehicle with class **Reservation** was implemented in java.
+---
 
-Experiment 6 recap: The generalization of the class Customer and class Exec as the class Person was implemented in Java.
+# How Theory Connects to Practice  
+- **Subtype Polymorphism:** You store `Customer` and `Exec` objects in references of type `Person`.  
+- **Upcasting:** Subclass objects are automatically assigned to superclass references.  
+- **Downcasting:** You convert a superclass reference back to a subclass type when needed.  
+- **Static Binding:** You observe how reference type determines accessible methods at compile time.  
+- **Abstract Classes:** You learn why abstract classes serve as conceptual parents but cannot be instantiated directly.  
 
-Now, the steps to implement the polymorphic behaviour of the Person object as Customer and Exec objects before and after conversion of the class Person as abstract:
+---
 
-Step 1: Implement the widening and narrowing of the Person, Customer and Exec object.
+# Tips if You Get Stuck  
+- Read the code comments carefully.  
+- Use the help button for guidance.  
+- Check the class diagram before making guesses.  
+- Review the theory on upcasting, downcasting, and abstract classes.  
+- Correct one step at a time instead of changing many things at once.  
 
-Step 2: Convert class Person as abstract and implement the widening and narrowing of the Person, Customer and Exec object.
+---
 
-Step 3: Complete the methods in the sequence diagram order of invocation as follows:
+# Common Mistakes to Avoid  
+- Using the wrong array type.  
+- Forgetting that subclass objects can be stored in superclass references.  
+- Missing explicit downcasting when required.  
+- Trying to instantiate an abstract class.  
+- Ignoring the class diagram while completing methods.  
 
-    i. Exec class – requestVehicle
+---
 
-    ii. Reservation class – locateReservation,
-
-    iii. Exec class – signContract
-
-    iv. Reservation class – releaseContract
-
-    v. Vehicle class – updateKeystatus
-
-Step 4: Use the provided TestDriver class to check the status of working.
-
-Output: Execution of the TestDriver code is shown in the console view.
-
-> **Note:** Work on the experiments sequentially.
-
+# Final Learning Outcome  
+By the end of this simulation, you will be able to:  
+- Explain subtype polymorphism in Java.  
+- Identify examples of upcasting and downcasting.  
+- Understand the role of static binding.  
+- Explain why abstract classes cannot be instantiated.  
+- Follow object interactions across multiple related classes.  
+- Read a small object‑oriented program and connect it to its output.  
