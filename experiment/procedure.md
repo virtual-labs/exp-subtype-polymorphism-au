@@ -1,66 +1,33 @@
-### Procedure
+# Procedure Used to Explain the Concept
 
-Consider a use case of the car rental application as follows:
+The concept is taught through a guided, step-by-step simulation instead of a single static explanation.
 
--  **Use Case Name:** Release a Vehicle (to a customer)
+## Procedure
 
-- **Description:** A customer arrives to acquire the vehicle and depart for desired destination. The vehicle reservation contract is signed and the vehicle is released to the customer.
+1. The simulation starts with **Instructions**, which tells the learner the goal of the activity and introduces the classes that will be used.
+2. The **Next** button then moves the learner to the **Class diagram**, so the learner first sees the overall object relationships before reading code.
+3. After that, the learner can explore each class one by one:
+   - Person
+   - Customer
+   - Exec
+   - Reservation
+   - Vehicle
+4. The final learning step is the **Test Driver Class**, where the learner applies the earlier understanding in code.
+5. Only after completing that coding step does the experiment allow progression to the next stage.
 
-- **Actors:** Front-Desk Office Executive, Customer
+## Teaching Approach
 
-  Basic Flow ("Sunny Day Scenario"):
+The sequence followed is:
 
-    1. A customer comes to the office to acquire a vehicle.
+- Overview first
+- Structure visualization second
+- Class-by-class exploration next
+- Application and testing last
 
-    2. The Office Executive locates the vehicle reservation contract by means of the reservation number and/or customer name. [Exception: Required vehicle type is not available due to late arrivals.]
+This approach is effective for object-oriented programming because learners first understand the relationships between objects, then study individual classes, and finally see how those classes are used together at runtime.
 
-    3. The customer signs the contract and the Office Executive gives the keys to the vehicle.
+In this experiment, the intended learning flow is:
 
-    4. The Office Executive then marks the contract active by entering the vehicle release date (today's date) onto the vehicle reservation contract. The use case terminates at this point.
+**Instructions -> Class diagram -> Individual classes -> Test Driver Class**
 
--  **Exceptions ("Rainy Day Scenario"):**
-
-    1. Required vehicle type is not available due to late arrivals:
-
-    2. Raised when the reserved vehicle is not available due to late returns. The customer is informed of the situation and told about the other vehicle types that are available. The customer is offered an incentive to accept another vehicle type. If the customer is not satisfied, the reservation is cancelled without penalty charges. The customer either accepts another vehicle type or cancels the reservation.
-
-- **Postconditions:** The customer departs with the vehicle and the reservation contract is marked active, or the reservation is cancelled.
-
--  **Stakeholder:** Reservation department
-
-Experiment 1 recap: Use case was completed. Noun phrases and conceptual classes were identified, and the domain object model was constructed.
-
-Experiment 2 recap: The verb phrases were identified and the method invocation between the objects were ordered to construct the time sequence model.
-
-Experiment 3 recap: The datatype of attributes and the signature of the methods were identified for every class. The relationship between classes was defined to construct the class diagram.
-
-Experiment 4 recap: The class Customer was implemented in Java following the constraints given on the attributes and its accessor and mutator functions.
-
-Experiment 5 recap: The aggregation and composition relationship of the class **Customer** and class Vehicle with class **Reservation** was implemented in java.
-
-Experiment 6 recap: The generalization of the class Customer and class Exec as the class Person was implemented in Java.
-
-Now, the steps to implement the polymorphic behaviour of the Person object as Customer and Exec objects before and after conversion of the class Person as abstract:
-
-Step 1: Implement the widening and narrowing of the Person, Customer and Exec object.
-
-Step 2: Convert class Person as abstract and implement the widening and narrowing of the Person, Customer and Exec object.
-
-Step 3: Complete the methods in the sequence diagram order of invocation as follows:
-
-    i. Exec class – requestVehicle
-
-    ii. Reservation class – locateReservation,
-
-    iii. Exec class – signContract
-
-    iv. Reservation class – releaseContract
-
-    v. Vehicle class – updateKeystatus
-
-Step 4: Use the provided TestDriver class to check the status of working.
-
-Output: Execution of the TestDriver code is shown in the console view.
-
-> **Note:** Work on the experiments sequentially.
-
+This sequence ensures that learners build understanding progressively instead of jumping directly into implementation.
