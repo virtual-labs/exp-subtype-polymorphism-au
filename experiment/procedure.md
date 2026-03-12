@@ -1,7 +1,3 @@
-# Procedure Used to Explain the Concept
-
-# Learning Simulation Walkthrough
-
 ## Stage 1: Instructions  
 At the beginning, you will see an **Instructions page**. This page contains a short, ordered list that explains the task, along with a **Next** button.  
 Take a moment to read the instructions carefully. The experiment is designed to help you learn about upcasting, downcasting, and static binding by modifying the `TestDriver` class. Once you understand the purpose, click **Next** to continue.  
